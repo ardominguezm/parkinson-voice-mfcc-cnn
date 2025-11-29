@@ -41,4 +41,33 @@ The dataset includes:
 ---
 
 ## 📁 Repository Structure
+parkinson-voice-mfcc-cnn/
+│
+├── raw/
+│   ├── control/                      # Raw CSV signals of healthy controls
+│   ├── parkinson/                    # Raw CSV signals of PD patients
+│
+├── processed/
+│   ├── mfcc_images.npy              # MFCC matrices after padding
+│   ├── labels.npy                   # Corresponding labels (0=HC, 1=PD)
+│
+├── metadata/
+│   ├── dataset_description.md       # Source, acquisition, annotation details
+│   ├── participants_info.csv        # Basic demographics if available
+│   ├── LICENSE                      # License information
+│
+├── code/
+│   ├── 01_extract_mfcc.py           # Signal processing and MFCC extraction
+│   ├── 02_build_cnn.py              # CNN architecture definition
+│   ├── 03_cross_validation.py       # Stratified 10-fold CV script
+│   ├── 04_visualization.py          # MFCC image visualization
+│   ├── full_pipeline.py             # Unified end-to-end reproducible workflow
+│
+├── analysis/
+│   ├── metrics_real_data.csv        # Accuracy, F1, precision, recall, ROC-AUC
+│   ├── mfcc_examples/               # Figures for healthy and PD subjects
+│   ├── results_summary.md           # Statistical summary and discussion
+│
+├── README.md                        # Main documentation (this file)
+└── CITATION.cff                     # For Zenodo DOI attribution
 

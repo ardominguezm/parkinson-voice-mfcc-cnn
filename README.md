@@ -3,8 +3,7 @@
 
 This repository contains the research code and dataset organization for the paper:
 
-**Domínguez-Monterroza A., Mateos-Caballero A., Jiménez-Martín A.**  
-*Automated Detection of Parkinson’s Disease from Voice Recordings Using Convolutional Neural Networks and Synthetic Spectral Image Features*,  Neural Computing and Applications, 2025, **In Review**.
+**Domínguez-Monterroza A., Mateos-Caballero A., Jiménez-Martín A.**  *Automated Detection of Parkinson’s Disease from Voice Recordings Using Convolutional Neural Networks and Synthetic Spectral Image Features*,  Neural Computing and Applications, 2025, **In Review**.
 
 ## Acknowledgements.
 

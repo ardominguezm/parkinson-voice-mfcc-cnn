@@ -1,25 +1,29 @@
-# Automated Detection of Parkinson’s Disease from Voice Recordings Using MFCC Spectral Features and Convolutional Neural Networks
- 
-This repository accompanies the manuscript:
+# Automated Detection of Parkinson’s Disease from Voice Recordings  
+### Using Convolutional Neural Networks and Synthetic MFCC Spectral Image Features
 
-Domínguez-Monterroza A., Mateos-Caballero A., Jiménez-Martín A.
-*Automated Detection of Parkinson’s Disease from Voice Recordings Using Convolutional Neural Networks and Synthetic Spectral Image Features*. Neural Computing and Applications, 2025. In review.
+This repository contains the official research code and dataset organization for the paper:
 
-
-It includes raw data organization, MFCC extraction pipeline, CNN training, cross-validation experiments, and result analysis.
-
-The project follows:
-- **Structured data folders**: raw → processed → analysis
-- **Version-controlled code**
-- **Metadata and documentation for reproducibility**
-- **Automatic archival and DOI via Zenodo**
+**Domínguez-Monterroza A., Mateos-Caballero A., Jiménez-Martín A.**  
+*Automated Detection of Parkinson’s Disease from Voice Recordings Using Convolutional Neural Networks and Synthetic Spectral Image Features*,  Neural Computing and Applications, 2025, **In Review**.
 
 ---
 
-##  Project Description
+## Overview
 
-The goal of this study is to classify Parkinson’s Disease (PD) vs Healthy Control (HC) subjects using MFCC-based spectral images derived from sustained phonation of the vowel */a/*. A deep Convolutional Neural Network (CNN) was trained on MFCC images extracted from real Colombian patients.
+This work proposes a complete pipeline for detecting Parkinson’s Disease (PD) using **Convolutional Neural Networks (CNNs)** trained on **MFCC spectral image features** extracted from raw audio signals of sustained phonation (/a/).  
+Two experimental settings are implemented:
 
+1. **Experiment 1 — Model trained and validated using real data**  
+2. **Experiment 2 — Model trained using GAN-generated synthetic data and evaluated on real data**
+
+Both experiments use:
+
+- MFCC spectral representations  
+- A deep CNN architecture  
+- Accuracy, F1-score, Precision, Recall, and ROC-AUC  
+- Multi-run cross-validation with mean, standard deviation, and coefficient of variation (CV)
+
+---
 ###  Dataset source (PC-GITA)
 The real voice dataset comes from:
 
@@ -40,35 +44,37 @@ The dataset includes:
   *Time Series Classification of Raw Voice Waveforms for Parkinson’s Disease Detection Using Generative Adversarial Network-Driven Data Augmentation*, IEEE Open Journal of the Computer Society, 2025.
 ---
 
-## 📁 Repository Structure
-´´´
+## Repository Structure
+
+```text
 parkinson-voice-mfcc-cnn/
 │
 ├── raw/
-│   ├── control/                      # Raw CSV signals of healthy controls
-│   ├── parkinson/                    # Raw CSV signals of PD patients
+│   ├── control/                 # Raw voice CSV files (healthy)
+│   └── parkinson/               # Raw voice CSV files (PD)
 │
 ├── processed/
-│   ├── mfcc_images.npy              # MFCC matrices after padding
-│   ├── labels.npy                   # Corresponding labels (0=HC, 1=PD)
+│   ├── mfcc_images.npy          # MFCC images used for CNN input
+│   ├── labels.npy               # Labels (0=control, 1=PD)
+│   └── README.md
 │
 ├── metadata/
-│   ├── dataset_description.md       # Source, acquisition, annotation details
-│   ├── participants_info.csv        # Basic demographics if available
-│   ├── LICENSE                      # License information
+│   ├── dataset_description.md   # PD dataset documentation
+│   ├── participants_info.csv    # Speaker metadata
+│   └── LICENSE
 │
 ├── code/
-│   ├── 01_extract_mfcc.py           # Signal processing and MFCC extraction
-│   ├── 02_build_cnn.py              # CNN architecture definition
-│   ├── 03_cross_validation.py       # Stratified 10-fold CV script
-│   ├── 04_visualization.py          # MFCC image visualization
-│   ├── full_pipeline.py             # Unified end-to-end reproducible workflow
+│   ├── 01_extract_mfcc.py
+│   ├── 02_build_cnn.py
+│   ├── 03_cross_validation.py
+│   ├── 04_visualization.py
+│   └── full_pipeline.py         # Complete experiment script
 │
 ├── analysis/
-│   ├── metrics_real_data.csv        # Accuracy, F1, precision, recall, ROC-AUC
-│   ├── mfcc_examples/               # Figures for healthy and PD subjects
-│   ├── results_summary.md           # Statistical summary and discussion
+│   ├── metrics_real_data.csv
+│   ├── metrics_synthetic_eval.csv
+│   ├── mfcc_examples/
+│   └── results_summary.md
 │
-├── README.md                        # Main documentation (this file)
-└── CITATION.cff                     # For Zenodo DOI attribution
-´´´
+├── CITATION.cff
+└── README.md

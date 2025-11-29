@@ -6,6 +6,9 @@ This repository contains the research code and dataset organization for the pape
 **Domínguez-Monterroza A., Mateos-Caballero A., Jiménez-Martín A.**  
 *Automated Detection of Parkinson’s Disease from Voice Recordings Using Convolutional Neural Networks and Synthetic Spectral Image Features*,  Neural Computing and Applications, 2025, **In Review**.
 
+## Acknowledgements.
+
+This work was funded by grants PID2021-122209OB-C31 and RED2022-134540-T from MICIU/AEI/10.13039/501100011033.
 ---
 
 ## Overview

@@ -8,7 +8,8 @@ This repository contains the research code and dataset organization for the pape
 
 ## Acknowledgements.
 
-This work was funded by grants PID2021-122209OB-C31 and RED2022-134540-T from MICIU/AEI/10.13039/501100011033.
+This work was funded by grants PID2021-122209OB-C31 and RED2022-134540-T from MICIU/AEI/10.13039/501100011033
+
 ---
 
 ## Overview

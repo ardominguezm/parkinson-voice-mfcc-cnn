@@ -30,10 +30,7 @@ Both experiments use:
 ###  Dataset source (PC-GITA)
 The real voice dataset comes from:
 
-- J. R. Orozco-Arroyave, J. D. Arias-Londoño, J. F. Vargas-Bonilla,  
-  M. C. Gonzalez-Rátiva, and E. Nöth,  
-  *New Spanish speech corpus database for the analysis of people suffering from Parkinson’s disease*,  
-  Proc. 9th Int. Conf. Language Resources and Evaluation, 2014.
+- J. R. Orozco-Arroyave, J. D. Arias-Londoño, J. F. Vargas-Bonilla, M. C. Gonzalez-Rátiva, and E. Nöth, *New Spanish speech corpus database for the analysis of people suffering from Parkinson’s disease*,  Proc. 9th Int. Conf. Language Resources and Evaluation, 2014.
 
 The dataset includes:
 

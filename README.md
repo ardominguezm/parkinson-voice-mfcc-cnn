@@ -53,19 +53,14 @@ The dataset includes:
 ```text
 parkinson-voice-mfcc-cnn/
 │
-├── raw/
-│   ├── control/                 # Raw voice CSV files (healthy)
-│   └── parkinson/               # Raw voice CSV files (PD)
+├── data/raw/
+│        ├── control/                 # Raw voice CSV files (healthy)
+│        └── parkinson/               # Raw voice CSV files (PD)
 │
 ├── processed/
 │   ├── mfcc_images.npy          # MFCC images used for CNN input
 │   ├── labels.npy               # Labels (0=control, 1=PD)
 │   └── README.md
-│
-├── metadata/
-│   ├── dataset_description.md   # PD dataset documentation
-│   ├── participants_info.csv    # Speaker metadata
-│   └── LICENSE
 │
 ├── code/
 │   ├── 01_extract_mfcc.py

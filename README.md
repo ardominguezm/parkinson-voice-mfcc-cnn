@@ -1,7 +1,7 @@
 # Automated Detection of Parkinson’s Disease from Voice Recordings  
 ### Using Convolutional Neural Networks and Synthetic MFCC Spectral Image Features
 
-This repository contains the official research code and dataset organization for the paper:
+This repository contains the research code and dataset organization for the paper:
 
 **Domínguez-Monterroza A., Mateos-Caballero A., Jiménez-Martín A.**  
 *Automated Detection of Parkinson’s Disease from Voice Recordings Using Convolutional Neural Networks and Synthetic Spectral Image Features*,  Neural Computing and Applications, 2025, **In Review**.
